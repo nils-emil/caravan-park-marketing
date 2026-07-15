@@ -1,6 +1,8 @@
 name: Deploy marketing to Cloudflare Workers
 
 on:
+  push:
+    branches: [main]
   workflow_dispatch:
 
 jobs:
