@@ -1,0 +1,7 @@
+# Cloudflare Workers static-assets headers.
+# Keeps /materials out of search engines at the HTTP level as well —
+# the page's <meta name="robots"> covers the HTML, this covers everything.
+/materials
+  X-Robots-Tag: noindex, nofollow
+/materials/*
+  X-Robots-Tag: noindex, nofollow
