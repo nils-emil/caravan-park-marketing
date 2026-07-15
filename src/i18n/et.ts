@@ -1,0 +1,117 @@
+import type { Translations } from './types';
+
+const et: Translations = {
+  nav: { bookDemo: 'Telli demo' },
+  hero: {
+    eyebrow: 'PARGIHALDUR · v1.0',
+    title: 'Karavanipargi haldustarkvara.',
+    subtitle: 'Iseteenindusbroneeringud, automaatne värav ja AI-toimetajad — kõik üheks tervikuks, et park toimiks ise.',
+    primaryCta: 'Telli demo',
+    secondaryCta: 'Vaata, kuidas see töötab',
+    liveAt: 'Töötab päriskliendi juures: willipu.pargihaldur.ee →',
+  },
+  features: {
+    sectionTitle: 'Kõik, mida tänapäeva karavanipark vajab.',
+    sectionLabel: 'OMADUSED',
+    items: {
+      bookings:      { title: 'Iseteenindusbroneering', desc: 'Külalised broneerivad ja maksavad 24/7 mistahes seadmest.' },
+      gates:         { title: 'Automaatne värav', desc: 'Külaline saab e-postile ligipääsulingi. Üks klikk avab värava.' },
+      accounting:    { title: 'Sisseehitatud raamatupidamine', desc: 'Iga broneering ja makse on jälgitav. Ekspordivalmis.' },
+      aiEditors:     { title: 'AI-toimetajad kõikjal', desc: 'Kirjuta kohalik teejuht, tingimused või hinnareeglid lihtsas keeles ümber.' },
+      aiPricing:     { title: 'AI hinnakujundaja', desc: 'Koostab kontaktvormi sõnumitest automaatselt hinnapakkumise mustandi.' },
+      sitemap:       { title: 'Interaktiivne kaart', desc: 'Külalistele interaktiivne pargi kaart, kus näeb mis kus asub.' },
+      multilang:     { title: 'Mitmekeelne broneerimisleht', desc: 'Sinu park kuues keeles juba esimesest päevast.' },
+      offers:        { title: 'Eripakkumised', desc: 'Personaalsed pakkumised gruppidele, pikematele peatustele, pulmadele — sekunditega.' },
+      notifications: { title: 'Teavitused', desc: 'Reaalajas teated saabumiste, maksete ja väravasündmuste kohta.' },
+      analytics:     { title: 'Analüütika armatuur', desc: 'Hõivatus, käive, ADR — ühe pilguga.' },
+      posters:       { title: 'Plakatid ja sildid', desc: 'Prinditavad QR-sildid, infotahvlid ja hinnakirjad ühe klikiga.' },
+    },
+  },
+  bookingsDeepDive: {
+    eyebrow: 'BRONEERINGUD',
+    title: 'Mobiilist broneeritud, kohe makstud.',
+    body: 'Külaline broneerib ja maksab vähem kui minutiga. Kinnitus, väravakood ja tšekk jõuavad e-postkasti automaatselt.',
+    bullets: [
+      'Mobiilipõhine broneerimisvoog, rakendust pole vaja',
+      'Kaardimaksed sinu olemasoleva väravalduse kaudu',
+      'Automaatne kinnitus-, tšeki- ja väravakoodikiri',
+    ],
+  },
+  gatesDeepDive: {
+    eyebrow: 'VÄRAVAJUURDEPÄÄS',
+    title: 'Ava värav ilma vastuvõtulauata.',
+    body: 'Iga broneeringuga saadetakse külalisele e-postile ligipääsulink, mis kehtib kogu peatumise jooksul. Külalised saabuvad mil tahes ajal. Sina näed iga avamist logist.',
+    bullets: [
+      'Ligipääsulink saadetakse automaatselt koos broneeringu kinnitusega',
+      'Ajaliselt piiratud ligipääs — link toimib ainult peatumise ajal',
+      'Iga avamine logitud — ajaga ja allikaga',
+    ],
+  },
+  aiEditorsDeepDive: {
+    eyebrow: 'AI-TOIMETAJAD',
+    title: 'Muuda pargi sisu lihtsas keeles.',
+    body: 'Palu AI-l täpsustada kohalikku teejuhti, lihtsustada tingimusi või kohendada hinnareegleid. Vaata muudatusi, kinnita või lükka tagasi — sõnad jäävad sinu omaks.',
+    bullets: [
+      'Kirjuta lihtsas keeles, mida soovid muuta',
+      'Eelvaade igast muudatusest enne avalikustamist',
+      'Toimib teejuhi, tingimuste ja hinnareeglite peal',
+    ],
+  },
+  sitemapDeepDive: {
+    eyebrow: 'INTERAKTIIVNE KAART',
+    title: 'Näita oma parki.',
+    body: 'Visuaalne pargi kaart aitab külalisel kohe leida vajalikud teenused, jalgrajad ja platsid. Sama kaart on aluseks ka sinu administraatorivaates.',
+    bullets: [
+      'Sinu päris pargi plaan, lohistades muudetav',
+      'Ikoonid elektri, vee, duššide, lõkkekohtade ja muu jaoks',
+      'Sama kaart külalistele broneerimislehel ja sulle adminis',
+    ],
+  },
+  caseStudy: {
+    eyebrow: 'KLIENDILUGU',
+    title: 'Kuidas Willipu juhib karavaniparki pargihalduriga.',
+    body: 'Willipu kasutab pargihaldurit iseteenindusbroneeringuteks, värava juhtimiseks ja raamatupidamiseks otsast lõpuni. Külalised registreerivad end ise, saavad väravakoodi, raamatupidamine on alati paigas.',
+    statValue: '100%',
+    statLabel: 'iseteeninduse sisseregistreerimine',
+    link: 'Vaata järele willipu.pargihaldur.ee →',
+  },
+  howItWorks: {
+    sectionTitle: 'Kuidas see töötab.',
+    steps: [
+      { title: 'Sina teed aluse ja vead elektri', desc: 'Betoonalus tõkkepuule ja elektrivarustus on sinu poolt.' },
+      { title: 'Meie paigaldame tõkkepuu', desc: 'Tõkkepuu, kontroller ja ühendused — kõik me hooleks.' },
+      { title: 'Seadistame veebi', desc: 'Broneerimisleht ja administraatoripaneel sinu pargi nime all.' },
+      { title: 'Impordime platsid ja hinnad', desc: 'Sisestame sinu pargi plaani, platsid, hinnad ja tingimused.' },
+      { title: 'Õpetame admini kasutama', desc: 'Lühike läbikäik administraatoripaneelist ja igapäevasest töövoost.' },
+      { title: 'Park on kasutuseks valmis', desc: 'Külalised broneerivad ise, värav avaneb automaatselt, sina vaatad raamatupidamist.' },
+    ],
+  },
+  faq: {
+    sectionTitle: 'Korduma kippuvad küsimused.',
+    items: [
+      { q: 'Mis see maksab?',
+        a: 'Hind sõltub pargi suurusest. Kirjuta meile ja teeme pakkumise.' },
+      { q: 'Kui kaua võtab seadistamine aega?',
+        a: 'Kui betoonalus ja elekter on juba olemas, paigaldame värava ja olete kohe töös.' },
+      { q: 'Kas see oskab minu riigi käibemaksu?',
+        a: 'Eesti KMKR on sisse ehitatud. Teiste EL riikide reegleid saab tenantipõhiselt seadistada.' },
+      { q: 'Kas külalised saavad broneerida oma keeles?',
+        a: 'Jah — eesti, inglise, vene, läti, saksa ja soome keel juba kohe.' },
+    ],
+  },
+  cta: {
+    title: 'Telli demo.',
+    subtitle: 'Räägi meile oma pargist. Vastame ühe tööpäeva jooksul.',
+    button: 'Saada e-kiri',
+    fallbackPrefix: 'või kirjuta otse:',
+    fallbackCallPrefix: 'või helista:',
+    mailSubject: 'Demo päring — pargihaldur',
+    mailBody: 'Tere,\n\nSooviksime pargihalduri demot oma karavanipargile.\n\nPargi nimi:\nLigikaudne suurus (platside arv):\nVeebileht (kui on):\n\nTänan!\n',
+  },
+  footer: {
+    contact: 'contact@pargihaldur.ee',
+    copyright: '© 2026 pargihaldur',
+  },
+};
+
+export default et;

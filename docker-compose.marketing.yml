@@ -1,0 +1,31 @@
+x-logging: &default-logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "7"
+
+services:
+  marketing:
+    image: ghcr.io/nils-emil/pargihaldur-marketing:latest
+    container_name: pargihaldur-marketing
+    restart: unless-stopped
+    logging: *default-logging
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: pargihaldur-caddy
+    restart: unless-stopped
+    logging: *default-logging
+    depends_on:
+      - marketing
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile.marketing:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

@@ -1,0 +1,8 @@
+{
+    email nilsemil.lille@gmail.com
+}
+
+pargihaldur.ee, www.pargihaldur.ee {
+    encode gzip
+    reverse_proxy marketing:80
+}
