@@ -86,11 +86,57 @@ const et: Translations = {
       { title: 'Park on kasutuseks valmis', desc: 'Külalised broneerivad ise, värav avaneb automaatselt, sina vaatad raamatupidamist.' },
     ],
   },
+  pricing: {
+    sectionLabel: 'HINNAD',
+    sectionTitle: 'Hooajapõhine hinnastus.',
+    intro: 'Maksad täishinda ainult kuuel hooajakuul — ülejäänud aasta eest vaid väike haldustasu. Aastamaksega saab veel soodsamalt.',
+    vatNote: 'Kõikidele hindadele lisandub käibemaks.',
+    cta: 'Küsi pakkumist',
+    plans: [
+      {
+        name: 'Tõkkepuu rendiga',
+        price: '350 €',
+        priceUnit: '/ kuu',
+        tagline: 'Täislahendus: tarkvara ja tõkkepuu ühe kuutasuga, ilma alginvesteeringuta.',
+        bullets: [
+          'Renti maksad 6 hooajakuul',
+          'Ülejäänud 6 kuul on seadme rent 0 €',
+          'Väljaspool hooaega haldustasu 10 € / kuu',
+        ],
+        yearTotal: 'Aasta kokku: 2160 €',
+        featured: true,
+      },
+      {
+        name: 'Ilma seadme rendita',
+        price: '60 €',
+        priceUnit: '/ kuu',
+        tagline: 'Tarkvara oma tõkkepuu või väravalahenduse juurde.',
+        bullets: [
+          'Kuutasu maksad 6 hooajakuul',
+          'Väljaspool hooaega haldustasu 10 € / kuu',
+          'Töötab sinu olemasoleva seadmega',
+        ],
+        yearTotal: 'Aasta kokku: 420 €',
+      },
+      {
+        name: 'Aastamakse',
+        price: '33 €',
+        priceUnit: '/ kuu',
+        tagline: 'Sama tarkvara ilma seadme rendita, ühtlase maksega 12 kuud aastas.',
+        bullets: [
+          'Ühtlane kuumakse terve aasta',
+          'Ilma seadme rendita',
+          'Aasta peale soodsam kui hooajapõhine pakett',
+        ],
+        yearTotal: 'Aasta kokku: 396 €',
+      },
+    ],
+  },
   faq: {
     sectionTitle: 'Korduma kippuvad küsimused.',
     items: [
       { q: 'Mis see maksab?',
-        a: 'Hind sõltub pargi suurusest. Kirjuta meile ja teeme pakkumise.' },
+        a: 'Vaata hinnastust ülal — tõkkepuu rendiga 350 € / kuu hooajal, ilma seadmeta alates 33 € / kuu. Kirjuta meile ja teeme personaalse pakkumise.' },
       { q: 'Kui kaua võtab seadistamine aega?',
         a: 'Kui betoonalus ja elekter on juba olemas, paigaldame värava ja olete kohe töös.' },
       { q: 'Kas see oskab minu riigi käibemaksu?',

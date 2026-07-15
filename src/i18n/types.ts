@@ -65,6 +65,22 @@ export interface Translations {
     sectionTitle: string;
     steps: { title: string; desc: string }[];
   };
+  pricing: {
+    sectionLabel: string;
+    sectionTitle: string;
+    intro: string;
+    vatNote: string;
+    cta: string;
+    plans: {
+      name: string;
+      price: string;
+      priceUnit: string;
+      tagline: string;
+      bullets: string[];
+      yearTotal: string;
+      featured?: boolean;
+    }[];
+  };
   faq: {
     sectionTitle: string;
     items: { q: string; a: string }[];

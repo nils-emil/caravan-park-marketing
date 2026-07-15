@@ -4,6 +4,7 @@ import FeatureGrid from './components/FeatureGrid';
 import DeepDive from './components/DeepDive';
 import CaseStudy from './components/CaseStudy';
 import HowItWorks from './components/HowItWorks';
+import Pricing from './components/Pricing';
 import FAQ from './components/FAQ';
 import EmailCta from './components/EmailCta';
 import Footer from './components/Footer';
@@ -59,6 +60,7 @@ export default function App() {
         />
         <CaseStudy />
         <HowItWorks />
+        <Pricing />
         <FAQ />
         <EmailCta />
       </main>

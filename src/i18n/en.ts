@@ -86,11 +86,57 @@ const en: Translations = {
       { title: 'Your park is ready', desc: 'Guests book themselves in, the gate opens automatically, you watch the books.' },
     ],
   },
+  pricing: {
+    sectionLabel: 'PRICING',
+    sectionTitle: 'Seasonal pricing.',
+    intro: 'Pay full price only during the six season months — the rest of the year costs just a small service fee. Annual billing is cheaper still.',
+    vatNote: 'All prices exclude VAT.',
+    cta: 'Request a quote',
+    plans: [
+      {
+        name: 'With barrier rental',
+        price: '350 €',
+        priceUnit: '/ month',
+        tagline: 'The full package: software and barrier gate in one monthly fee, no upfront investment.',
+        bullets: [
+          'Rental billed for the 6 season months',
+          'Device rent is 0 € for the other 6 months',
+          'Off-season service fee 10 € / month',
+        ],
+        yearTotal: 'Per year: 2160 €',
+        featured: true,
+      },
+      {
+        name: 'Without device rental',
+        price: '60 €',
+        priceUnit: '/ month',
+        tagline: 'The software, paired with your own barrier or gate hardware.',
+        bullets: [
+          'Billed for the 6 season months',
+          'Off-season service fee 10 € / month',
+          'Works with your existing hardware',
+        ],
+        yearTotal: 'Per year: 420 €',
+      },
+      {
+        name: 'Annual billing',
+        price: '33 €',
+        priceUnit: '/ month',
+        tagline: 'The same software without device rental, one even payment across all 12 months.',
+        bullets: [
+          'Even monthly payment all year round',
+          'No device rental',
+          'Cheaper per year than seasonal billing',
+        ],
+        yearTotal: 'Per year: 396 €',
+      },
+    ],
+  },
   faq: {
     sectionTitle: 'Frequently asked.',
     items: [
       { q: 'What does it cost?',
-        a: 'Pricing depends on the size of your park. Email us for a quote.' },
+        a: 'See the pricing above — 350 € / month in season with barrier rental, or from 33 € / month without hardware. Email us for a personal quote.' },
       { q: 'How long does it take to set up?',
         a: 'If the concrete footing and electricity are already in place, we just install the gate and you\'re up and running in no time.' },
       { q: 'Will it handle my country\'s VAT rules?',
