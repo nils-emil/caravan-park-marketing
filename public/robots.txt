@@ -1,0 +1,6 @@
+# /materials is intentionally NOT disallowed here: it is excluded from
+# search results via <meta name="robots" content="noindex, nofollow"> and
+# the X-Robots-Tag response header. A robots.txt Disallow would prevent
+# crawlers from ever seeing that noindex directive.
+User-agent: *
+Allow: /

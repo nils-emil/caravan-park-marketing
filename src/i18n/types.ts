@@ -82,4 +82,37 @@ export interface Translations {
     contact: string;            // shown email address
     copyright: string;
   };
+  materials: {
+    eyebrow: string;
+    title: string;
+    intro: string;
+    unlistedNote: string;       // reminder that the page is not indexed
+    backToSite: string;
+    brandSection: string;
+    brandNameNote: string;
+    brandColorsLabel: string;
+    brandColorDark: string;
+    brandColorLight: string;
+    textsSection: string;
+    textsHint: string;
+    shortPitchLabel: string;
+    shortPitch: string;
+    longPitchLabel: string;
+    longPitch: string;
+    copy: string;
+    copied: string;
+    imagesSection: string;
+    imagesHint: string;
+    download: string;
+    imageCaptions: {
+      landing: string;
+      booking: string;
+      admin: string;
+      access: string;
+      accessEmail: string;
+      aiSuggest: string;
+      sitemap: string;
+      poster: string;
+    };
+  };
 }
