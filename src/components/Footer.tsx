@@ -7,7 +7,7 @@ export default function Footer() {
   const toggle = (l: Lang) => () => setLang(l);
 
   return (
-    <footer style={{ borderTop: '1px solid var(--border)', padding: '40px 0' }}>
+    <footer style={{ borderTop: '1px solid var(--border)', padding: '40px 0', background: '#f0f0f0' }}>
       <div className="container" style={inner}>
         <div className="mono" style={{ fontSize: 14, fontWeight: 500 }}>pargihaldur</div>
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 16, fontSize: 14 }}>
