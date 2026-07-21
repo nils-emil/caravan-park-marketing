@@ -14,6 +14,12 @@ const SCREENSHOTS: { file: string; captionKey: keyof Translations['materials']['
   { file: 'poster.png', captionKey: 'poster' },
 ];
 
+const FLYERS: { lang: keyof Translations['materials']['flyerLangs']; file: string; thumb: string }[] = [
+  { lang: 'et', file: 'willipu-flaier-a4-et.pdf', thumb: 'willipu-flaier-et-thumb.jpg' },
+  { lang: 'en', file: 'willipu-flaier-a4-en.pdf', thumb: 'willipu-flaier-en-thumb.jpg' },
+  { lang: 'fi', file: 'willipu-flaier-a4-fi.pdf', thumb: 'willipu-flaier-fi-thumb.jpg' },
+];
+
 const BRAND_COLORS = [
   { hex: '#0a0a0a', labelKey: 'brandColorDark' as const },
   { hex: '#fafafa', labelKey: 'brandColorLight' as const },
@@ -107,6 +113,27 @@ export default function MaterialsPage() {
             </div>
           </div>
         </section>
+        <section className="section">
+          <div className="container">
+            <h2 className="h-section" style={{ marginBottom: 12 }}>{m.flyersSection}</h2>
+            <p className="lead" style={{ marginTop: 0, marginBottom: 40 }}>{m.flyersHint}</p>
+            <div style={flyerGrid}>
+              {FLYERS.map(f => (
+                <figure key={f.lang} style={imageCard}>
+                  <a href={`/flyers/${f.file}`} download>
+                    <img src={`/flyers/${f.thumb}`} alt={`${m.flyerLangs[f.lang]} — A4 PDF`} style={flyerThumb} loading="lazy" />
+                  </a>
+                  <figcaption style={captionRow}>
+                    <span style={{ fontSize: 13 }}>{m.flyerLangs[f.lang]} · A4 PDF</span>
+                    <a href={`/flyers/${f.file}`} download className="mono" style={downloadLink}>
+                      {m.download} ↓
+                    </a>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </>
@@ -192,6 +219,17 @@ const imageGrid: React.CSSProperties = {
 };
 
 const imageCard: React.CSSProperties = { margin: 0 };
+
+const flyerGrid: React.CSSProperties = {
+  display: 'grid', gap: 32,
+  gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+  maxWidth: 900,
+};
+
+const flyerThumb: React.CSSProperties = {
+  width: '100%', display: 'block', borderRadius: 8,
+  border: '1px solid var(--border)', background: '#fff',
+};
 
 const imageStyle: React.CSSProperties = {
   width: '100%', display: 'block', borderRadius: 8,

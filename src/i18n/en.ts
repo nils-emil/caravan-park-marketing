@@ -180,6 +180,9 @@ const en: Translations = {
     imagesSection: 'Screenshots.',
     imagesHint: 'Click "Download" to save the full-resolution PNG.',
     download: 'Download',
+    flyersSection: 'Flyers.',
+    flyersHint: 'Print-ready A4 advertising flyers for Willipu caravan park — in three languages.',
+    flyerLangs: { et: 'Estonian', en: 'English', fi: 'Finnish' },
     imageCaptions: {
       landing: 'Booking site landing view',
       booking: 'Self-service booking form',

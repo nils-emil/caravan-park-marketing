@@ -120,6 +120,9 @@ export interface Translations {
     imagesSection: string;
     imagesHint: string;
     download: string;
+    flyersSection: string;
+    flyersHint: string;
+    flyerLangs: { et: string; en: string; fi: string };
     imageCaptions: {
       landing: string;
       booking: string;

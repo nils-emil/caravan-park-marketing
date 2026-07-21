@@ -180,6 +180,9 @@ const et: Translations = {
     imagesSection: 'Ekraanipildid.',
     imagesHint: 'Kliki „Laadi alla", et salvestada täislahutuses PNG.',
     download: 'Laadi alla',
+    flyersSection: 'Flaierid.',
+    flyersHint: 'Prindivalmis A4 reklaamflaierid Willipu karavanipargi näitel — kolmes keeles.',
+    flyerLangs: { et: 'Eestikeelne', en: 'Ingliskeelne', fi: 'Soomekeelne' },
     imageCaptions: {
       landing: 'Broneerimislehe avavaade',
       booking: 'Iseteeninduse broneerimisvorm',
